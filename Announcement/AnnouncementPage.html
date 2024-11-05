@@ -167,7 +167,7 @@
                 onAuthStateChanged(auth, async (user) => {
                     if (user) {
                         const userEmail = user.email; // Get the logged-in user's email
-                        const docRef = doc(db, 'Teachers', userEmail); // Use email as document ID
+                        const docRef = doc(db, 'Teachers', 'jamie.tan.2023@scis.smu.edu.sg'); // Use email as document ID
                         const docSnap = await getDoc(docRef);
 
                         if (docSnap.exists()) {
